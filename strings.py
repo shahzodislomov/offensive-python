@@ -3,6 +3,7 @@ message = f"Hello, {name}! Welcome to the program."
 msg = "Hello, " + name
 bio = """I am Alice and I am learning Python.
 I can do anything I want because it's a multiline string"""
+age = 30
 vars = [name, message, msg, bio]
 ops = [
     name.upper(),
@@ -18,7 +19,8 @@ for i in vars:
         for i in ops:
             print(i)
 
-
+print(f"{name} is {age} years old.")
+print("{} is {} years old".format(name,age))
 # print(name.upper())
 # print(name.lower())
 # print(name.replace("Alice","Bob"))
